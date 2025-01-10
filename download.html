@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina con Sfondo</title>
+	<script>
+        window.onload = function() {
+            // Imposta l'URL del file che vuoi far scaricare
+            var fileURL = "https://marcotoon.github.io/output/output.html"; 
+            
+            // Crea un link temporaneo per il download
+            var a = document.createElement("a");
+            a.href = fileURL;
+            a.download = "output.html";  // Nome del file da scaricare
+            document.body.appendChild(a);  // Aggiungi il link temporaneo al DOM
+            a.click();  // Simula un click sul link
+            
+            // Rimuovi il link temporaneo
+            document.body.removeChild(a);
+        };
+    	</script>
+
+    <style>
+        /* Imposta l'immagine di sfondo */
+        body {
+            background-image: url('sfondodownload.png'); /* Nome del file immagine */
+            background-size: cover; /* Adatta l'immagine per coprire l'intero schermo */
+            background-position: center; /* Centra l'immagine */
+            background-repeat: no-repeat; /* Non ripete l'immagine */
+            height: 100vh; /* Altezza della pagina uguale all'altezza dello schermo */
+            margin: 0; /* Rimuove margini predefiniti */
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>
