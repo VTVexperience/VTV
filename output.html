@@ -1,52 +1,280 @@
 
 	<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina con Sfondo e Contenuto</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: url('https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/sky-background2.png') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .content-image {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        .button-image {
-            width: 180px; /* Modifica la dimensione se necessario */
-            cursor: pointer;
-        }
-
-        .button-image:hover {
-            opacity: 0.8;
-        }
-        
-        .uccelli {
-            width: 100%;
-        }
-        
-    </style>
-</head>
-<body>
-    <!-- Immagine centrale -->
-    <img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/testodownload.png" alt="Contenuto" class="content-image">
-
-    <!-- Pulsante -->
-    <a href="https://vtvexperience.github.io/VTV/output.html?personalita1=nerd&personalita2=sentimentalsoul&uccello1=nerd&tag1=techlover&percentuale1=0&tag2=gaming&percentuale2=0&tag3=studysession&percentuale3=0&uccello2=owl">
-        <img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/button.png" alt="Pulsante" class="button-image">
-    </a>
-    <!-- Uccelli -->
-    <img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/birds.png" alt="Contenuto" class="uccelli">
-</body>
-</html>
+	<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vtv Page</title>
+	<style>
+	* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    	}
+ 	body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	}
+	.section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	overflow: hidden;
+	}
+	.section-1 {
+	background: url('https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/sky-background.png');
+	background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+	height: 380px;
+	position: relative;
+	}
+	.section-1 .text-image {
+	width: 100%;
+	max-width: none;
+	object-fit: contain;
+	display: block; 
+	}
+	.section-2 { 
+	background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+	height: 400px;
+	position: relative;
+	}
+	.wrap { 
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: center;
+	width: 100%;
+	overflow: hidden;
+	max-width: none;
+	object-fit: contain;
+	display: block; 
+	}
+	.section-2 .text-image {
+	width: 100%; /* Adatta la larghezza per dispositivi mobili */
+	position: relative;
+	text-align: left; /* Assicura che il testo nelle immagini sia allineato a sinistra */
+	}
+	.section-2 .tag1 {
+	width: 100%;
+	position: relative;
+	text-align: left; /* Assicura che il testo nelle immagini sia allineato a sinistra */
+	}
+	.section-2 .tag2 {
+	width: 100%;
+	position: relative;
+	text-align: left; /* Assicura che il testo nelle immagini sia allineato a sinistra */
+	} 
+	.section-3 {
+	height: 410px;
+	position: relative;
+	}
+	.section-3 .image-row2 {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-top: 10px;
+	height: 60px;
+	position: relative;
+	}
+	.section-3 .image-row3 {
+	display: flex;
+	height: 60px;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 10px;
+	position: relative;
+	}
+	.section-3 .image-row1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 60px;
+	position: relative;
+	}
+	.section-3 .image-row3 img {
+	height: 60px;
+	position: absolute;
+	}
+	.section-3 .image-row1 img {
+	height: 60px;
+	position: absolute;
+	}
+	.section-3 .image-row2 img {
+	height: 60px;
+	position: absolute;
+	}
+	.section-3 .percentage {
+	font-size: 28px;
+	font-weight: bold;
+	color: #0005F9;
+	position: absolute;
+	right: 10px; /* Allineamento a destra */
+	}
+	.section-3 .background-image1 {
+	position: relative;
+	width: 60%;
+	height: 100%;
+	z-index: -1;
+	}a
+	.section-3 .background-image2 {
+	position: relative;
+	width: 25%;
+	height: 100%;
+	z-index: -1;
+	}
+	.section-3 .background-image3 {
+	position: relative;
+	width: 15%;
+	height: 100%;
+	z-index: -1;
+	}
+	.section-3 .testosopra {
+	width: 100%;
+	max-width: none;
+	object-fit: contain;
+	display: block; 
+	}
+	.section-3 .bottone {
+	position: relative;
+	width: 100%;
+	margin-top: 20px;
+	max-width: none;
+	object-fit: contain;
+	display: block; 
+	}
+	.wrap2 { 
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 80%;
+	max-width: none;
+	object-fit: contain;
+	display: block; 
+	}
+	.section-4 {
+	background: url('https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/pink-background.png');
+	background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+	height: 320px;
+	position: relative;
+	}
+	.section-4 .text-image {
+	width: 100%;
+	margin-top: 90px;
+	max-width: none;
+	object-fit: contain;
+	display: block; 
+	}
+	.section-5 {
+	background: url('https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/sky-background2.png');
+	background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+	height: 480px;
+	position: relative;
+	}
+	.section-5 .text-image {
+	width: 100%;
+	max-width: none;
+	object-fit: contain;
+	display: block; 
+	}
+        .section-5 img.mano {
+	width: 320px;
+	position: absolute;
+	margin-top: 190px;
+	right: 0px;
+	}
+        .section-5 img.logo2 {
+	width: 100%; /* Adatta la larghezza per dispositivi mobili */
+	position: absolute;
+	bottom: 0px;
+	}
+	</style>
+	</head>
+	<body>
+	<!-- Sezione 1 -->
+	<div class="section section-1">
+	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/section-1-text.png" alt="Section Text" class="text-image">
+	</div>
+	<!-- Sezione 2 -->
+	<div id="sfondo2" class="section section-2">
+	<div class="wrap">
+	<img src="section-2-1.png" alt="Section Text" class="text-image">
+	<img id="personalita1-image" src="" alt="Section Text" class="tag1">
+	<img src="section-2-2.png" alt="Section Text" class="text-image">
+	<img id="personalita2-image" src="" alt="Section Text" class="tag2">
+	</div>
+	</div>
+	<!-- Sezione 3 -->
+	<div class="section section-3">
+	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/section-3-1.png" alt="Immagine 1" class="testosopra">
+	<div class="wrap2">
+	<div class="image-row1">
+	<img id="rettangolo1" src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/rettangolo.png" alt="Background" class="background-image1">
+	<img id="tag1-image" src="" alt="Immagine 1">
+	<div id="percentuale1" class="percentage"></div>
+	</div>
+	<div class="image-row2">
+	<img id="rettangolo2" src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/rettangolo.png" alt="Background" class="background-image2">
+	<img id="tag2-image" src="" alt="Immagine 2">
+	<div id="percentuale2" class="percentage"></div>
+	</div>
+	<div class="image-row3">
+	<img id="rettangolo3" src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/rettangolo.png" alt="Background" class="background-image3">
+	<img id="tag3-image" src="" alt="Immagine 3">
+	<div id="percentuale3" class="percentage"></div>
+	</div>
+	</div>
+	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/section-3-button.png" alt="bottone" class="bottone">
+	</div>
+	<!-- Sezione 4 -->
+	<div class="section section-4">
+	<img id="uccello2-image" src="" alt="Section Text" class="text-image">
+	</div>
+	<!-- Sezione 5 -->
+	<div class="section section-5">
+	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/section-5-text.png" alt="Section Text" class="text-image">
+	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/mano.png" alt="Mano" class="mano">
+	<img src="https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/logo-vtv-2.png" alt="Vtv Logo 2" class="logo2">
+	</div>
+	<script>
+	const params = new URLSearchParams(window.location.search);
+	const uccello1 = params.get('uccello1');
+        const personalita1 = params.get('personalita1');
+        const personalita2 = params.get('personalita2');
+	const uccello2 = params.get('uccello2');
+	const tag1 = params.get('tag1');
+        const tag2 = params.get('tag2');
+        const tag3 = params.get('tag3');
+        const percentuale1 = params.get('percentuale1');
+        const percentuale2 = params.get('percentuale2');
+        const percentuale3 = params.get('percentuale3');
+	const rettangolo1 = document.getElementById('rettangolo1');
+        const rettangolo2 = document.getElementById('rettangolo2');
+        const rettangolo3 = document.getElementById('rettangolo3');
+	if (uccello2) document.getElementById('uccello2-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${uccello2}.png`;
+	if (tag1) document.getElementById('tag1-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${tag1}.png`;
+        if (tag2) document.getElementById('tag2-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${tag2}.png`;
+        if (tag3) document.getElementById('tag3-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${tag3}.png`;
+	if (percentuale1) document.getElementById('percentuale1').innerText = `${percentuale1}%`;
+        if (percentuale2) document.getElementById('percentuale2').innerText = `${percentuale2}%`;
+        if (percentuale3) document.getElementById('percentuale3').innerText = `${percentuale3}%`;
+	rettangolo1.style.width = `${percentuale1}%`;
+        rettangolo2.style.width = `${percentuale2}%`;
+        rettangolo3.style.width = `${percentuale3}%`;
+	sfondo2.style.backgroundImage = `url('https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${uccello1}bird.png')`;
+        if (personalita1) document.getElementById('personalita1-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${personalita1}.png`;
+        if (personalita2) document.getElementById('personalita2-image').src = `https://raw.githubusercontent.com/MarcoToon/output/refs/heads/main/${personalita2}.png`;
+	</script>
+	</body>
+	</html>
 	
